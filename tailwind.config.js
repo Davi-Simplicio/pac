@@ -20,7 +20,7 @@ export default {
           'base-100-content':"#000000",
           'base-200':"#5F5F5F",
           'base-200-content':"#FFFFFF",
-          'base-300':"#FFE8E8",
+          'base-300':"#2E2E2E",
           'base-300-content':"#FFFFFF",
           warning:'#FBBE2E',
           error:'#F86158',
