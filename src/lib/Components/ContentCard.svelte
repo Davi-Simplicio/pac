@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import Play from '../Icons/Play.svelte';
 	export let title = '';
-	export let seen;
+	export let seen:boolean;
 	export let rightSide;
 	export let contentIndex;
 </script>
