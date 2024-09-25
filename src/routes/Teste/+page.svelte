@@ -4,7 +4,14 @@
 	import ContentCard from '$lib/Components/ContentCard.svelte';
 	import InformativeCard from '$lib/Components/InformativeCard.svelte';
 	import CodeMockup from '$lib/Components/CodeMockup.svelte';
-	import { Codes, CardTimeLineList, CardWithImageList, progressBarValue } from '../../lib/types/content';
+	import {
+		Codes,
+		CardTimeLineList,
+		CardWithImageList,
+		progressBarValue,
+		ContentPageList
+	} from '../../lib/types/content';
+	import VideoComponent from '$lib/Components/videoComponent.svelte';
 </script>
 
 <div class="w-full h-max flex flex-col items-center bg-base-300">
@@ -21,6 +28,7 @@
 				rightSide={cardTimeLine.rightSide}
 				contentIndex={cardTimeLine.contentIndex}
 			></ContentCard>
+
 		{/each}
 		{#each CardWithImageList as cardWithImage}
 			<InformativeCard

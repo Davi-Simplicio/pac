@@ -14,7 +14,7 @@ export interface CardTimeLine {
     title: string;
     seen: boolean;
     rightSide: boolean;
-    contentIndex:string;
+    contentIndex:number;
 }
 
 export interface ContentPage {

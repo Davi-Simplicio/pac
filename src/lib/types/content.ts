@@ -7,13 +7,13 @@ export const CardTimeLineList: CardTimeLine[] = [
 		title: 'Variavel',
 		seen: false,
         rightSide: false,
-		contentIndex: '0'
+		contentIndex: 0
 	},
 	{
 		title: 'Tipos de Variavel',
 		seen: false,
         rightSide: true,
-		contentIndex: '1'
+		contentIndex: 1
 	}
 ];
 
