@@ -5,8 +5,8 @@
 </script>
 
 <div class="w-full h-12 fixed z-50">
-    <div class="h-10 w-full bg-neutral flex justify-between">
-        <a class="h-full w-1/12 cursor-pointer" href="/Teste">
+    <div class="h-full py-1 w-full bg-neutral flex justify-evenly ">
+        <a class="h-full w-1/12 cursor-pointer" href="/home">
             <Monkey></Monkey>
         </a>
         <div class="h-full w-8/12 flex justify-center items-center">
