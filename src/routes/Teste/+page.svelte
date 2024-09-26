@@ -12,6 +12,7 @@
 		ContentPageList
 	} from '../../lib/types/content';
 	import VideoComponent from '$lib/Components/videoComponent.svelte';
+	import TimeLine from '$lib/Components/TimeLine.svelte';
 </script>
 
 <div class="w-full h-max flex flex-col items-center bg-base-300">
@@ -21,15 +22,10 @@
 			<TextCard valor="Tipo de Variavel"></TextCard>
 		</div>
 		<ProgressBar progress={progressBarValue}></ProgressBar>
-		{#each CardTimeLineList as cardTimeLine}
-			<ContentCard
-				seen={cardTimeLine.seen}
-				title={cardTimeLine.title}
-				rightSide={cardTimeLine.rightSide}
-				contentIndex={cardTimeLine.contentIndex}
-			></ContentCard>
+		<TimeLine></TimeLine>
+		<div class="w-full bg-black h-20">
 
-		{/each}
+		</div>
 		{#each CardWithImageList as cardWithImage}
 			<InformativeCard
 				title={cardWithImage.title}
