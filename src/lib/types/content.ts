@@ -92,7 +92,7 @@ export const ContentPageList: ContentPage[] = [
 		title: 'Variavel',
 		textList: [
 			{
-				title: "",
+				title: "um",
 				content:"Variavel é um espaço na memória do computador que armazena um valor."
 			},
 			{
