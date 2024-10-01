@@ -4,6 +4,7 @@
 	import Search from "$lib/Icons/Search.svelte";
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+
 	onMount(()=>{
 		// te();
 	});
@@ -43,9 +44,14 @@
 		<Search></Search>
 	</label>
 	{#if searchValue && result.length>0}
-		<div class="w-full  absolute top-8 z-0 h-max p-1 bg-slate-50 rounded-b-md shadow-md">
+		<div 
+		role="listbox"
+		class="w-full  absolute top-8 z-0 h-max p-1 bg-slate-50 rounded-b-md shadow-md">
 			{#each result as page,i }
 				<a 
+				role="option"
+				aria-selected="true"
+				tabindex="0"
 				on:click={
 				()=>{
 					goto("/PaginaConteudo/"+ContentPageList.indexOf(page));
