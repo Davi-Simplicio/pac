@@ -44,7 +44,7 @@
 	</label>
 	{#if searchValue && result.length>0}
 		<div class="w-full  absolute top-8 z-0 h-max p-1 bg-slate-50 rounded-b-md shadow-md">
-			{#each result as page }
+			{#each result as page,i }
 				<a 
 				on:click={
 				()=>{
