@@ -12,7 +12,7 @@
 				title={card.title}
 				seen={card.seen}
 				rightSide={card.rightSide}
-				contentIndex={index}
+				contentIndex={card.title}
 			></ContentCard>
 		</div>
 	{/each}
