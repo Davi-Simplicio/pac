@@ -3,15 +3,18 @@
 	import type {ContentPage} from '$lib/types/data';
 	import Search from "$lib/Icons/Search.svelte";
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	onMount(()=>{
-		te();
+		// te();
 	});
 
 	/**
 	 * @type {any}
 	 */
 	let searchValue=''
-	let result
+
+	let result: ContentPage[]=[]
+
 	function te(){
 		ContentPageList.forEach(element => {
 			console.log(element);
@@ -30,7 +33,8 @@
 <div class="flex flex-col relative h-max w-5/12">
 	<label class="input input-bordered h-1/3 z-20 flex items-center gap-2">
 		<input  
-		type="text" 
+		type="text"
+		on:focusout={()=>setTimeout(()=>result.length=0,100) } 
 		bind:value={searchValue} 
 		class="p-1 grow" 
 		placeholder="Search"
@@ -38,9 +42,19 @@
 		/>
 		<Search></Search>
 	</label>
-	{#if searchValue}
-		<div class="w-full absolute top-8 z-0 h-max p-2 bg-slate-50 rounded-b-md shadow-md">
-			{searchValue}
+	{#if searchValue && result.length>0}
+		<div class="w-full  absolute top-8 z-0 h-max p-1 bg-slate-50 rounded-b-md shadow-md">
+			{#each result as page }
+				<a 
+				on:click={
+				()=>{
+					goto("/PaginaConteudo/"+ContentPageList.indexOf(page));
+					setTimeout(()=>window.location.reload(),200);
+					}
+					}>
+					<div class="p-2 rounded-sm hover:bg-slate-300 cursor-pointer" >{page.title}</div>
+				</a>
+			{/each }
 		</div>
 	{/if}
 </div>

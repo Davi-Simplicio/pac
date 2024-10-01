@@ -131,7 +131,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'IDE de Desinvolvimento',
 		textList: [
 			{
 				title: "",
@@ -152,7 +152,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Condicionais',
 		textList: [
 			{
 				title: "",
@@ -173,7 +173,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Alocação de Mémoria',
 		textList: [
 			{
 				title: "",
@@ -194,7 +194,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Brincar Sempre é Bom',
 		textList: [
 			{
 				title: "",
