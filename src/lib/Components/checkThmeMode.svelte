@@ -2,7 +2,7 @@
 	import { onMount } from "svelte";
   let synthwave: any=true;
   let t=()=>{
-    document.querySelector("html")?.setAttribute("data-theme",'lightModeWithGreen')
+    document.documentElement.setAttribute("data-theme",'lightModeWithGreen')
   }
 </script>
 <label class="grid cursor-pointer place-items-center">

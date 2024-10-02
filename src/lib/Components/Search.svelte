@@ -59,8 +59,8 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div 
-on:focusout={()=>elements.forEach((a)=>console.log(a.focus))}
-on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max w-5/12">
+	on:mouseleave={()=>result.length=0}
+	on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max w-6/12">
 	<label 
 		class="input 
 		focus:outline-none 
