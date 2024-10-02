@@ -9,7 +9,7 @@
 	onMount(() => {
 		pageIndex = window.location.pathname.split('/').pop();
 		console.log(pageIndex);
-		contentCardItem = ContentPageList[JSON.parse(pageIndex!)];        
+		contentCardItem = ContentPageList[JSON.parse(pageIndex!)];
 	});
 </script>
 

@@ -2,13 +2,15 @@
 	import { onMount } from "svelte";
   let synthwave: any=true;
   let t=()=>{
-    document.documentElement.setAttribute("data-theme",'lightModeWithGreen')
+    document.documentElement.getAttribute("data-theme")=='darkModeWithGreen' ?
+    document.documentElement.setAttribute("data-theme",'lightModeWithGreen') :
+    document.documentElement.setAttribute("data-theme",'darkModeWithGreen')
   }
 </script>
 <label class="grid cursor-pointer place-items-center">
   <input
     type="checkbox"
-    on:click={()=>{synthwave=!synthwave; console.log(synthwave);}}
+    on:click={()=>{synthwave=!synthwave; console.log(synthwave); t()}}
     value={synthwave}
     class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
   <svg

@@ -40,7 +40,7 @@ export default {
           'base-100-content': "#000000", // Texto em preto
           'base-200': "#E0E0E0", // Um tom intermediário
           'base-200-content': "#000000", // Texto em preto
-          'base-300': "#C8C8C8", // Um pouco mais escuro
+          'base-300': "#ebe8e8", // Um pouco mais escuro
           'base-300-content': "#000000", // Texto em preto
           warning: '#FBBE2E', // Mantemos o amarelo
           error: '#F86158', // Mantemos o vermelho
