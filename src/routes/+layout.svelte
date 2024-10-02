@@ -2,7 +2,7 @@
     import "../app.css";
     import Monkey from "$lib/Icons/Monkey.svelte";
     import Search from "$lib/Components/Search.svelte";
-	import { onMount } from "svelte";
+	import { afterUpdate, beforeUpdate, onMount } from "svelte";
 	import { browser } from "$app/environment";
     /**
 	 * @type {any}
@@ -13,17 +13,38 @@
      * @type {any}
     */
     let t='';
-    onMount(()=>{
-        t=getComputedStyle(document.body).getPropertyValue('--font-size');
-        console.log(window.location); 
+    let splitText=[];
+    afterUpdate(()=>{
         console.log(t); 
+        t=localStorage.getItem('font-size')||'';
+        document.documentElement.style.setProperty('--font-size',t);
         
     });
     function incrementFontSize(){
-        getComputedStyle(document.body).setProperty("--font-size",t+1);
-    
+        t=getComputedStyle(document.body).getPropertyValue('--font-size');
+        splitText=t.split('rem');
+        console.log(splitText);
+        let add=Number(splitText[0])
+        add+=0.1;
+        console.log(add);
+        let newFontSize=add+'rem'
+        console.log(newFontSize);
+        localStorage.setItem('font-size',newFontSize);
+        document.documentElement.style.setProperty('--font-size',newFontSize);
     }
-    
+    function dencrementFontSize(){
+        t=getComputedStyle(document.body).getPropertyValue('--font-size');
+        splitText=t.split('rem');
+        console.log(splitText);
+        let add=Number(splitText[0])
+        add-=0.1;
+        console.log(add);
+        let newFontSize=add+'rem'
+        console.log(newFontSize);
+        localStorage.setItem('font-size',newFontSize);
+        document.documentElement.style.setProperty('--font-size',newFontSize);
+    }
+
 </script>
 
 <div class="w-full h-12 fixed z-50">
@@ -38,7 +59,7 @@
             <buttn class="cursor-pointer" on:click={()=>incrementFontSize()}  >
                 A+ 
             </buttn>
-            <buttn  class="cursor-pointer">
+            <buttn  class="cursor-pointer" on:click={()=>dencrementFontSize()}>
                 A-
             </buttn>
         </div>

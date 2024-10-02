@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root{
-    --font-size:1;
+    --font-size:1rem;
 }
 *{
-    font-size: var(--font-size)+'rem' !important;
+    font-size: var(--font-size) !important;
 }
