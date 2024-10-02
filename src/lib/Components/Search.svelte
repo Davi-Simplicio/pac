@@ -32,7 +32,7 @@
 	function navigationSearch(e: KeyboardEvent & { currentTarget: EventTarget & HTMLDivElement }) {
 		if (e.keyCode == 38 || e.keyCode == 40) {
 			if (e.keyCode == 38) {
-				if (selectionNavigate == 0) {
+				if (selectionNavigate == 0 && result.length>2) {
 					selectionNavigate = elements.length - 1;
 					console.log(elements[selectionNavigate].focus() + 'keyup');
 				} else {
@@ -71,6 +71,7 @@ on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max w-5/
 		flex 
 		items-center 
 		gap-2">
+		<Search></Search>
 		<input
 			type="text"
 			bind:value={searchValue}
@@ -78,7 +79,6 @@ on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max w-5/
 			placeholder="Search"
 			on:keyup={() => searchItem()}
 		/>
-		<Search></Search>
 	</label>
 	{#if searchValue && result.length > 0}
 		<div

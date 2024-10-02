@@ -4,6 +4,7 @@
     import Search from "$lib/Components/Search.svelte";
 	import { afterUpdate, beforeUpdate, onMount } from "svelte";
 	import { browser } from "$app/environment";
+	import CheckThmeMode from "$lib/Components/checkThmeMode.svelte";
     /**
 	 * @type {any}
     */
@@ -14,7 +15,7 @@
     */
     let t='';
     let splitText=[];
-    afterUpdate(()=>{
+    beforeUpdate(()=>{
         console.log(t); 
         t=localStorage.getItem('font-size')||'';
         document.documentElement.style.setProperty('--font-size',t);
@@ -62,6 +63,9 @@
             <buttn  class="cursor-pointer" on:click={()=>dencrementFontSize()}>
                 A-
             </buttn>
+        </div>
+        <div class="flex">
+            <CheckThmeMode></CheckThmeMode>
         </div>
     </div>
 </div>
