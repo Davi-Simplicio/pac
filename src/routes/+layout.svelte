@@ -49,7 +49,7 @@
 </script>
 
 <div class="w-full h-12 fixed z-50">
-    <div class="h-full py-1 w-full bg-neutral flex justify-evenly ">
+    <div class="h-full py-1 w-full bg-neutral flex justify-center ">
         <a class="h-full min-w-14  cursor-pointer" href="/home">
             <Monkey></Monkey>
         </a>

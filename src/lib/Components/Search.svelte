@@ -76,7 +76,7 @@
 			type="text"
 			bind:value={searchValue}
 			class="p-1 grow focus:outline-none focus-within:outline-none"
-			placeholder="Search"
+			placeholder="Search..."
 			on:keyup={() => searchItem()}
 		/>
 	</label>
