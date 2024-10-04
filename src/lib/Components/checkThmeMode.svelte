@@ -5,7 +5,7 @@
     let theme=localStorage.getItem("data-theme");
     console.log(theme);
     theme=='darkModeWithGreen' ? synthwave=true : synthwave=false;
-    document.documentElement.setAttribute("data-theme",theme)
+    document.documentElement.setAttribute("data-theme",theme!);
   });
   let t=()=>{
     document.documentElement.getAttribute("data-theme")=='darkModeWithGreen' ?

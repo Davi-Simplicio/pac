@@ -18,7 +18,7 @@
 		<div class="w-full h-full flex justify-center text-3xl">
 			{contentCardItem?.title}
 		</div>
-		<div class="flex justify-center">
+		<div class="flex justify-center" >
 			{contentCardItem.textList[0].content}
 		</div>
 		<CodeMockup data={contentCardItem.contentCodeList[0]}></CodeMockup>

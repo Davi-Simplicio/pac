@@ -13,6 +13,7 @@
 	 */
 	let searchValue = '';
 
+	let input: HTMLAnchorElement;
 	let result: ContentPage[] = [];
 	let elements: HTMLAnchorElement[] = [];
 	let selectionNavigate = 0;
@@ -50,10 +51,13 @@
 			}
 			console.log(e.key, e.keyCode);
 			e.preventDefault();
-		}
-		if (e.keyCode == 13) {
+		}else if (e.keyCode == 13) {
 			elements[selectionNavigate].click();
+		}else{
+			input.focus();
+			selectionNavigate = 0;
 		}
+
 	}
 </script>
 
@@ -74,6 +78,7 @@
 		<Search></Search>
 		<input
 			type="text"
+			bind:this={input}
 			bind:value={searchValue}
 			class="p-1 grow focus:outline-none focus-within:outline-none"
 			placeholder="Search..."
