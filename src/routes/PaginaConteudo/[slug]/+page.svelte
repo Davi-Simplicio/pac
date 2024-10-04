@@ -3,7 +3,9 @@
 	import { ContentPageList } from '../../../lib/types/content';
 	import ContentCard from '$lib/Components/ContentCard.svelte';
 	import type { ContentPage } from '$lib/types/data';
-	import CodeMockup from '$lib/Components/CodeMockup.svelte';
+	import CodeMockup from '../../../lib/Components/codeMockup.svelte';
+	import Title from '$lib/Components/Title.svelte';
+	import Paragraph from '$lib/Components/Paragraph.svelte';
 	let pageIndex: string | undefined = '';
 	let contentCardItem: ContentPage | undefined = undefined;
 	onMount(() => {
@@ -16,12 +18,12 @@
 {#if contentCardItem}
 	<div class="w-full h-max text-white flex flex-col gap-10 items-center ">
 		<div class="w-full h-full flex justify-center text-3xl">
-			{contentCardItem?.title}
+			<Title text={contentCardItem?.title} isSubTitle={false}></Title>
 		</div>
-		<div class="flex justify-center" >
-			{contentCardItem.textList[0].content}
+		<div class="flex justify-center">
+			<Paragraph text={contentCardItem.textList[0].content}></Paragraph>
 		</div>
-		<CodeMockup data={contentCardItem.contentCodeList[0]}></CodeMockup>
+		<CodeMockup data={contentCardItem.contentCodeList[0].codes}></CodeMockup>
 		<div class="flex flex-col">
 			<h1 class="flex justify-center text-xl">
 				{contentCardItem.textList[1].title}

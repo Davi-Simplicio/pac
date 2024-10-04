@@ -1,11 +1,11 @@
-import type { CardWithImage, Code,CardTimeLine, ContentPage } from './data';
+import type { CardWithImage, Code,CardTimeLine, ContentPage, CodeList } from './data';
 
 // Card Time Line
 
 export const CardTimeLineList: CardTimeLine[] = [
 	{
 		title: 'Variavel',
-		seen: false,
+		seen: true,
         rightSide: false,
 		contentIndex: 0
 	},
@@ -53,38 +53,41 @@ export const CardWithImageList: CardWithImage[] = [
 ];
 
 // Code Mockup
-export const Codes: Code[] = [
+export const Codes: CodeList = 
 	{
-		prefix: '1',
-		code: 'int numero = 0;',
-		textColor: 'text-warning'
-	},
-	{
-		prefix: '2',
-		code: "<div>",
-		textColor: 'text-error'
-	},
-	{
-		prefix: '3',
-		code: "	<h1>Hello World<h1>",
-		textColor: 'text-error'
-	},
-	{
-		prefix: '4',
-		code: "<div>",
-		textColor: 'text-error'
-	},
-	{
-		prefix: '5',
-		code: 'println(Hello World);',
-		textColor: 'text-neutral-content'
-	},
-	{
-		prefix: '~',
-		code: 'Hello World',
-		textColor: 'text-base-200'
-	}
-];
+		codes:[
+			{
+				prefix: '1',
+				code: 'int numero = 0;',
+				textColor: 'text-warning'
+			},
+			{
+				prefix: '2',
+				code: "<div>",
+				textColor: 'text-error'
+			},
+			{
+				prefix: '3',
+				code: "	<h1>Hello World<h1>",
+				textColor: 'text-error'
+			},
+			{
+				prefix: '4',
+				code: "<div>",
+				textColor: 'text-error'
+			},
+			{
+				prefix: '5',
+				code: 'println(Hello World);',
+				textColor: 'text-neutral-content'
+			},
+			{
+				prefix: '~',
+				code: 'Hello World',
+				textColor: 'text-base-200'
+			}
+		]
+	};
 
 export const ContentPageList: ContentPage[] = [
 
@@ -127,7 +130,7 @@ export const ContentPageList: ContentPage[] = [
 			title: 'Variavel',
 			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
 		},
-		contentCode: "0",
+		contentCode: "1",
 		contentCodeList: [Codes]
 	},
 	{
@@ -148,7 +151,7 @@ export const ContentPageList: ContentPage[] = [
 			title: 'Variavel',
 			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
 		},
-		contentCode: "0",
+		contentCode: "2",
 		contentCodeList: [Codes]
 	},
 	{
@@ -169,7 +172,7 @@ export const ContentPageList: ContentPage[] = [
 			title: 'Variavel',
 			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
 		},
-		contentCode: "0",
+		contentCode: "3",
 		contentCodeList: [Codes]
 	},
 	{
@@ -190,7 +193,7 @@ export const ContentPageList: ContentPage[] = [
 			title: 'Variavel',
 			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
 		},
-		contentCode: "0",
+		contentCode: "4",
 		contentCodeList: [Codes]
 	},
 	{
@@ -211,7 +214,28 @@ export const ContentPageList: ContentPage[] = [
 			title: 'Variavel',
 			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
 		},
-		contentCode: "0",
+		contentCode: "5",
+		contentCodeList: [Codes]
+	},
+	{
+		title: 'Semen',
+		textList: [
+			{
+				title: "",
+				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
+			},
+			{
+				title: "Para que são usadas as Variaveis?",
+				content:"Variavel é usada para aramazenar um valor"
+			},
+		],
+		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
+		imageSrcList: [''],
+		infoGraphicContent: {
+			title: 'Variavel',
+			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
+		},
+		contentCode: "6",
 		contentCodeList: [Codes]
 	}
 
