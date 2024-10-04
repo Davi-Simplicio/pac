@@ -5,7 +5,7 @@
 </script>
 
 <div class="w-full h-12 fixed z-50">
-    <div class="h-10 w-full bg-neutral flex justify-between">
+    <div class="h-12 w-full bg-neutral flex justify-between">
         <a class="h-full w-1/12 cursor-pointer" href="/Teste">
             <Monkey></Monkey>
         </a>

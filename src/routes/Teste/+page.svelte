@@ -13,9 +13,10 @@
 	} from '../../lib/types/content';
 	import VideoComponent from '$lib/Components/videoComponent.svelte';
 	import TimeLine from '$lib/Components/TimeLine.svelte';
+	import Banner from '$lib/Components/Banner.svelte';
 </script>
 
-<div class="w-full h-max flex flex-col items-center bg-base-300">
+<!-- <div class="w-full h-max flex flex-col items-center bg-base-300">
 	<div class="w-full h-full flex flex-col items-center gap-4 overflow-auto">
 		<div class="flex gap-2 w-8/12 justify-center">
 			<TextCard valor="Variavel"></TextCard>
@@ -35,4 +36,5 @@
 		{/each}
 		<CodeMockup data={Codes}></CodeMockup>
 	</div>
-</div>
+</div>-->
+<Banner></Banner>
