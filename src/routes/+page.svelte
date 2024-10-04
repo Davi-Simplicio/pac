@@ -2,6 +2,6 @@
     import { onMount } from "svelte";
 
 onMount(() => {
-    window.location.href = '/Teste';
+    window.location.href = '/home';
 });
 </script>

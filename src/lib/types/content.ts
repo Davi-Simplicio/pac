@@ -95,7 +95,7 @@ export const ContentPageList: ContentPage[] = [
 		title: 'Variavel',
 		textList: [
 			{
-				title: "",
+				title: "um",
 				content:"Variavel é um espaço na memória do computador que armazena um valor."
 			},
 			{
@@ -134,7 +134,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'IDE de Desinvolvimento',
 		textList: [
 			{
 				title: "",
@@ -155,7 +155,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Condicionais',
 		textList: [
 			{
 				title: "",
@@ -176,7 +176,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Alocação de Mémoria',
 		textList: [
 			{
 				title: "",
@@ -197,7 +197,7 @@ export const ContentPageList: ContentPage[] = [
 		contentCodeList: [Codes]
 	},
 	{
-		title: 'Tipo de Variavel',
+		title: 'Brincar Sempre é Bom',
 		textList: [
 			{
 				title: "",

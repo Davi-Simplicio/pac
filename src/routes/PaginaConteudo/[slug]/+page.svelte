@@ -10,7 +10,8 @@
 	let contentCardItem: ContentPage | undefined = undefined;
 	onMount(() => {
 		pageIndex = window.location.pathname.split('/').pop();
-		contentCardItem = ContentPageList[JSON.parse(pageIndex!)];        
+		console.log(pageIndex);
+		contentCardItem = ContentPageList[JSON.parse(pageIndex!)];
 	});
 </script>
 
