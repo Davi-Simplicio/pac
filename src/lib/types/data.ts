@@ -4,6 +4,10 @@ export interface Code {
     textColor: string;
 }
 
+export interface CodeList {
+    codes: Code[];
+}
+
 export interface CardWithImage {
     title: string;
     description: string;
@@ -19,12 +23,8 @@ export interface CardTimeLine {
 
 export interface ContentPage {
     title: string;
-    textList: textContent[];
-    videoLinkList: string[];
-    imageSrcList: string[];
-    infoGraphicContent: infoGraphicContent;
     contentCode: string;
-    contentCodeList: Code[][];
+    contents: Content[];
 }
 
 export interface infoGraphicContent {
@@ -35,4 +35,9 @@ export interface infoGraphicContent {
 export interface textContent {
     title: string;
     content: string;
+}
+
+export interface Content {
+    type: string;
+    content: any;
 }

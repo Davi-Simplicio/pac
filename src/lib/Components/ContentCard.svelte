@@ -7,6 +7,7 @@
 	export let seen: boolean;
 	export let rightSide;
 	export let contentIndex;
+	export let srcVideo: string;
 	let modal:HTMLDialogElement | null = null;
 	let timer: boolean = false;
 	onMount(()=>{
@@ -103,7 +104,7 @@
 				<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-secondary-content" on:click={()=>timer=false}>✕</button>
 			</form>
 			<div class="flex w-full h-full justify-center items-center">
-				<VideoComponent src={ContentPageList[contentIndex].videoLinkList[0]}></VideoComponent>
+				<VideoComponent src={srcVideo}></VideoComponent>
 			</div>
 		</div>
 	</dialog>
