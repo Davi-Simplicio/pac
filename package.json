@@ -38,8 +38,5 @@
 		"vite": "^5.0.3",
 		"vitest": "^2.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@sveu/browser": "^1.0.1"
-	}
+	"type": "module"
 }

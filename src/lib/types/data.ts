@@ -40,3 +40,8 @@ export interface textContent {
     title: string;
     content: string;
 }
+
+export interface Content {
+    type: string;
+    content: any;
+}
