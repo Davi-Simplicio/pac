@@ -23,12 +23,8 @@ export interface CardTimeLine {
 
 export interface ContentPage {
     title: string;
-    textList: textContent[];
-    videoLinkList: string[];
-    imageSrcList: string[];
-    infoGraphicContent: infoGraphicContent;
     contentCode: string;
-    contentCodeList: CodeList[];
+    contents: Content[];
 }
 
 export interface infoGraphicContent {

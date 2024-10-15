@@ -8,36 +8,6 @@ export const CardTimeLineList: CardTimeLine[] = [
 		seen: true,
         rightSide: false,
 		contentIndex: 0
-	},
-	{
-		title: 'Tipos de Variavel',
-		seen: false,
-        rightSide: true,
-		contentIndex: 1
-	},
-	{
-		title: 'Variavel',
-		seen: false,
-        rightSide: false,
-		contentIndex: 2
-	},
-	{
-		title: 'Tipos de Variavel',
-		seen: false,
-        rightSide: true,
-		contentIndex: 3
-	},
-	{
-		title: 'Variavel',
-		seen: false,
-        rightSide: false,
-		contentIndex: 2
-	},
-	{
-		title: 'Tipos de Variavel',
-		seen: false,
-        rightSide: true,
-		contentIndex: 3
 	}
 ];
 
@@ -89,154 +59,16 @@ export const Codes: CodeList =
 		]
 	};
 
-export const ContentPageList: ContentPage[] = [
-
+export const ContentPageList: ContentPage = 
 	{
 		title: 'Variavel',
-		textList: [
+		contentCode: '0',
+		contents: [
 			{
-				title: "um",
-				content:"Variavel é um espaço na memória do computador que armazena um valor."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/QrFjyty_HK0'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "0",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'Tipo de Variavel',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "1",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'IDE de Desinvolvimento',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "2",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'Condicionais',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "3",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'Alocação de Mémoria',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "4",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'Brincar Sempre é Bom',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "5",
-		contentCodeList: [Codes]
-	},
-	{
-		title: 'Semen',
-		textList: [
-			{
-				title: "",
-				content:"Existem varios tipos de variaveis, como inteiro, real, texto, booleano."
-			},
-			{
-				title: "Para que são usadas as Variaveis?",
-				content:"Variavel é usada para aramazenar um valor"
-			},
-		],
-		videoLinkList: ['https://www.youtube.com/embed/2ckX4M3ocdQ'],
-		imageSrcList: [''],
-		infoGraphicContent: {
-			title: 'Variavel',
-			description: 'Variavel é um espaço na memória do computador que armazena um valor.'
-		},
-		contentCode: "6",
-		contentCodeList: [Codes]
+				type: "text",
+				content: ""
+			}
+		]
 	}
 
-]
+
