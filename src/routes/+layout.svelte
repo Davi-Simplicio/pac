@@ -4,8 +4,8 @@
       import Search from "$lib/Components/Search.svelte";
 </script>
 
-<div class="w-full h-12 fixed z-50">
-    <div class="h-10 w-full bg-neutral flex justify-between">
+<div class="w-full h-16 fixed z-50">
+    <div class="h-16 w-full bg-neutral flex justify-between">
         <a class="h-full w-1/12 cursor-pointer" href="/Teste">
             <Monkey></Monkey>
         </a>
