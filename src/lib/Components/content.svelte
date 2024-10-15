@@ -10,7 +10,7 @@
 	export let contents: Content[];
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center flex-col gap-6">
 	{#each contents as content}
         {#if content.type == "video"}
             {#if typeof content.content === 'string'}

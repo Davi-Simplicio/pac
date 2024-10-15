@@ -59,16 +59,22 @@ export const Codes: CodeList =
 		]
 	};
 
-export const ContentPageList: ContentPage = 
-	{
-		title: 'Variavel',
-		contentCode: '0',
-		contents: [
-			{
-				type: "text",
-				content: ""
-			}
-		]
-	}
+export const ContentPageList: ContentPage[] = 
+	[
+		{
+			title: 'Lógica de Programação',
+			contentCode: '0',
+			contents: [
+				{
+					type: "text",
+					content: "Lógica de programação é a base do desenvolvimento de software e consiste em criar soluções para problemas por meio de instruções claras e sequenciais que um computador possa entender e executar. Ela envolve a compreensão e o uso de estruturas lógicas como sequências, condições e loops para tomar decisões e repetir ações de forma eficiente."
+				},
+				{
+					type: "text",
+					content: "A lógica de programação é fundamental para qualquer linguagem de programação, pois permite que o programador organize suas ideias e resolva problemas de forma clara e lógica. Ela pode ser aplicada usando diversas linguagens, como C, Java, Python, entre outras."
+				},
+			]
+		}
+	]
 
 

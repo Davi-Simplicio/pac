@@ -12,15 +12,16 @@
 	onMount(() => {
 		pageIndex = window.location.pathname.split('/').pop();
 		console.log(pageIndex);
+		contentCardItem = ContentPageList[JSON.parse(pageIndex!)];
 	});
 </script>
 
 {#if contentCardItem}
 	<div class="w-full h-max text-white flex flex-col gap-10 items-center ">
 		<div class="w-full h-full flex justify-center text-3xl">
-			<Title text={ContentPageList.title} isSubTitle={false}></Title>
+			<Title text={contentCardItem.title} isSubTitle={false}></Title>
 		</div>
-		<Content contents={ContentPageList.contents}></Content>
+		<Content contents={contentCardItem.contents}></Content>
 	</div>
 {:else}
     <div class="w-full h-max flex justify-center items-center text-white">
