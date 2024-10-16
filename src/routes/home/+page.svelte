@@ -16,49 +16,37 @@
 </script>
 
 <div class="w-full h-max flex flex-col items-center bg-base-300">
+	<div class="flex w-full h-full justify-center items-center gap-2">
+		<button class="btn btn-primary"
+			on:click={() => {
+				const carrousel = document.getElementById('carrousel');
+				console.log("carrousel:"+carrousel);
+				carrousel ? carrousel.scrollLeft -= 150 : "";
+			}}
+		>
+		<h1>❮</h1>
+		</button>
+		<div class="grid grid-cols-7 gap-52 overflow-x-scroll w-[65%] mt-4  ml-2" id="carrousel">
+			<TextCard valor="Lógica de Programação"></TextCard>
+			<TextCard valor="Linguagem de Programação C"></TextCard>
+			<TextCard valor="Bibliotecas básicas em C"></TextCard>
+			<TextCard valor="Declaração de variáveis"></TextCard>
+			<TextCard valor="Comandos de Entrada e Saída"></TextCard>
+			<TextCard valor="Condicional"></TextCard>
+			<TextCard valor="Laços de Repetição"></TextCard>
+		</div>
+		<button class="btn btn-primary"
+			on:click={() => {
+				const carrousel = document.getElementById('carrousel');
+				console.log("carrousel:"+carrousel);
+				carrousel ? carrousel.scrollLeft += 150 : "";
+			}}
+		>
+		<h1>❯</h1>
+		</button>
+	</div>
 
-
-	<div class="carousel w-full">
-		<div id="slide1" class="carousel-item relative w-full">
-		  <TextCard valor="Lógica"></TextCard>
-		  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-			<a href="#slide4" class="btn btn-circle">❮</a>
-			<a href="#slide2" class="btn btn-circle">❯</a>
-		  </div>
-		</div>
-		<div id="slide2" class="carousel-item relative w-full">
-		  <img
-			src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-			class="w-full" />
-		  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-			<a href="#slide1" class="btn btn-circle">❮</a>
-			<a href="#slide3" class="btn btn-circle">❯</a>
-		  </div>
-		</div>
-		<div id="slide3" class="carousel-item relative w-full">
-		  <img
-			src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-			class="w-full" />
-		  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-			<a href="#slide2" class="btn btn-circle">❮</a>
-			<a href="#slide4" class="btn btn-circle">❯</a>
-		  </div>
-		</div>
-		<div id="slide4" class="carousel-item relative w-full">
-		  <img
-			src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-			class="w-full" />
-		  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-			<a href="#slide3" class="btn btn-circle">❮</a>
-			<a href="#slide1" class="btn btn-circle">❯</a>
-		  </div>
-		</div>
-	  </div>
 	<div class="w-full h-full flex flex-col items-center gap-4 overflow-auto">
-		<div class="flex gap-2 w-8/12 justify-center">
-			<TextCard valor="Variavel"></TextCard>
-			<TextCard valor="Tipo de Variavel"></TextCard>
-		</div>
 		<ProgressBar progress={progressBarValue}></ProgressBar>
 		<TimeLine></TimeLine>
 		<div class="w-full bg-black h-20"></div>
@@ -69,6 +57,5 @@
 				imageSrc={cardWithImage.imageSrc}
 			></InformativeCard>
 		{/each}
-		<CodeMockup data={Codes}></CodeMockup>
 	</div>
 </div>

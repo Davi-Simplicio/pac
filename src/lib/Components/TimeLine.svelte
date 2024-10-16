@@ -13,6 +13,7 @@
 				seen={card.seen}
 				rightSide={card.rightSide}
 				contentIndex={card.contentIndex}
+				srcVideo=""
 			></ContentCard>
 		</div>
 	{/each}
