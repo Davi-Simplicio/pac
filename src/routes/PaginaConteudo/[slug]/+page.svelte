@@ -24,7 +24,8 @@
 		<Content contents={contentCardItem.contents}></Content>
 	</div>
 {:else}
-    <div class="w-full h-max flex justify-center items-center text-white">
-        <p>Este Conteúdo Não Existe</p>
-    </div>
+    
+	<iframe src="https://www.geniol.com.br/logica/problemas/teste-de-einstein/" title="Einstein's Riddle Test" class="w-10/12 h-[800px]" >
+
+	</iframe>
 {/if}
