@@ -8,7 +8,7 @@
             {text}
         </h2>
     {:else}
-        <h1 class="text-3xl">
+        <h1 class="!text-3xl">
             {text}
         </h1>
     {/if}

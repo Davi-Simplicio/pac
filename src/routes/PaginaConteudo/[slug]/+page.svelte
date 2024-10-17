@@ -17,11 +17,14 @@
 </script>
 
 {#if contentCardItem}
-	<div class="w-full h-max text-white flex flex-col gap-10 items-center ">
-		<div class="w-full h-full flex justify-center text-3xl">
+	<div class="w-full h-max text-neutral-content flex flex-col gap-10 items-center ">
+		<div class="w-full h-full pt-8 flex justify-center text-3xl">
 			<Title text={contentCardItem.title} isSubTitle={false}></Title>
 		</div>
-		<Content contents={contentCardItem.contents}></Content>
+		<div class="flex justify-center w-1/2">
+
+			<Content contents={contentCardItem.contents}></Content>
+		</div>
 	</div>
 {:else}
     

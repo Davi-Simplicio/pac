@@ -22,6 +22,12 @@
 		result = ContentPageList.filter((e:ContentPage) =>
 			e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
 		);
+		ContentPageList.filter((e:ContentPage) =>{
+			console.log(
+				e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+			)
+		}
+		);
 		console.log(result);
 		elements.length = result.length;
 	}
@@ -106,6 +112,7 @@
 					}}
 				>
 					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">{page.title}</div>
+					<div></div>
 				</a>
 			{/each}
 		</div>
