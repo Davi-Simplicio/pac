@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-=======
-:root{
-    --font-size:1rem;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: var(--font-size) !important;
 }
-*{
-    font-size: var(--font-size) !important;
->>>>>>> 3283a876196cafc568e056daa70e247421c334fe
+
+:root {
+	--font-size: 1rem;
 }

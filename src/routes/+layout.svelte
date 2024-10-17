@@ -48,15 +48,9 @@
 
 </script>
 
-<<<<<<< HEAD
 <div class="w-full h-16 fixed z-50">
     <div class="h-16 w-full bg-neutral flex justify-between">
         <a class="h-full w-1/12 cursor-pointer" href="/Teste">
-=======
-<div class="w-full h-12 fixed z-50">
-    <div class="h-full py-1 w-full bg-neutral flex justify-center ">
-        <a class="h-full min-w-14  cursor-pointer" href="/home">
->>>>>>> 3283a876196cafc568e056daa70e247421c334fe
             <Monkey></Monkey>
         </a>
         <div class="h-full w-8/12 flex justify-center items-center">
