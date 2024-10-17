@@ -5,14 +5,17 @@ import type { CardWithImage, Code,CardTimeLine, ContentPage, CodeList } from './
 export const CardTimeLineList: CardTimeLine[] = [
 	{
 		title: 'Variavel',
-		seen: true,
+		seen: false,
         rightSide: false,
 		contentIndex: 0
+	},
+	{
+		title: 'Variavel',
+		seen: false,
+        rightSide: true,
+		contentIndex: 1
 	}
 ];
-
-export const progressBarValue = CardTimeLineList.filter((card) => card.seen).length / CardTimeLineList.length * 100;
-// Card With Image
 
 export const CardWithImageList: CardWithImage[] = [
 	{
