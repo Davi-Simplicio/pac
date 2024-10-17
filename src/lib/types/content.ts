@@ -69,7 +69,7 @@ export const ContentPageList: ContentPage[] =
 			contentCode: '0',
 			contents: [
 				{
-					type: "text",
+					type: "title",
 					content: "Lógica de programação é a base do desenvolvimento de software e consiste em criar soluções para problemas por meio de instruções claras e sequenciais que um computador possa entender e executar. Ela envolve a compreensão e o uso de estruturas lógicas como sequências, condições e loops para tomar decisões e repetir ações de forma eficiente."
 				},
 				{
