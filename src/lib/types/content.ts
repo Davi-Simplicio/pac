@@ -270,8 +270,8 @@ export const ContentPageList: ContentPage[] =
 					content: "Video"
 				},
 				{
-					type: "video",
-					content: "https://www.youtube.com/watch?v=2GRXxen1-p4"
+					type: "iframe",
+					content: "https://www.youtube.com/embed/2GRXxen1-p4"
 				}
 			]
 		}

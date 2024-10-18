@@ -11,9 +11,11 @@
 	let modal:HTMLDialogElement | null = null;
 	let timer: boolean = false;
 	onMount(()=>{
-		modal = document.getElementById('my_modal_3') as HTMLDialogElement;
+		modal = document.getElementById("my_modal_"+ contentIndex) as HTMLDialogElement;
 	})
-	function seenContent() {		
+	function seenContent() {	
+		console.log(srcVideo);
+			
 		setTimeout(() => {
 			let cardlist = JSON.parse(window.localStorage.getItem("CardTimeLineList")!)
 			cardlist[contentIndex].seen = true
@@ -82,7 +84,6 @@
 						: 'bg-base-200'} rounded-md flex justify-center items-center"
 						on:click={(e)=>{
 							e.preventDefault()
-							console.log("Vitor Gay Morto");
 							seenContent()
 							modal?.showModal()
 							}}
@@ -103,7 +104,7 @@
 	</a>
 {/if}
 
-	<dialog id="my_modal_3" class="modal w-full h-full flex justify-center items-center">
+	<dialog id={"my_modal_"+ contentIndex} class="modal w-full h-full flex justify-center items-center">
 		<div class="modal-box w-11/12 h-[90%] max-w-full max-h-full bg-secondary ">
 			<form method="dialog">
 				<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-secondary-content" on:click={()=>window.location.reload()}>✕</button>

@@ -11,7 +11,7 @@
 	export let contents: Content[];
 </script>
 
-<div class="flex justify-center flex-col gap-6 ">
+<div class="flex items-center flex-col gap-6 w-full">
 	{#each contents as content}
         {#if content.type == "video"}
             {#if typeof content.content === 'string'}
