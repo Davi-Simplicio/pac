@@ -18,7 +18,7 @@
 
 </script>
 
-<div class="flex flex-col  items-center justify-start w-full h-screen  overflow-y-scroll">
+<div class="flex flex-col  items-center justify-start w-full h-screen ">
     {#each cardTimelIneList as card, index}
 	<div class="flex w-full justify-center">
 		<div

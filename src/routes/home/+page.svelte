@@ -46,38 +46,18 @@
 
 <div class="w-full h-max flex flex-col items-center bg-base-300">
 	<div class="flex w-full h-full justify-center items-center gap-2">
-		<button
-			class="btn btn-primary"
-			on:click={() => {
-				const carrousel = document.getElementById('carrousel');
-				console.log('carrousel:' + carrousel);
-				carrousel ? (carrousel.scrollLeft -= 150) : '';
-			}}
-		>
-			<h1>❮</h1>
-		</button>
-		<div class="grid grid-cols-7 gap-52 overflow-x-scroll w-[65%] mt-4 ml-2" id="carrousel">
+		<div class="grid grid-cols-6 w-[65%] mt-4 ml-2 mb-10" >
 			<TextCard valor="Lógica de Programação"></TextCard>
 			<TextCard valor="Linguagem de Programação C"></TextCard>
-			<TextCard valor="Bibliotecas básicas em C"></TextCard>
 			<TextCard valor="Declaração de variáveis"></TextCard>
 			<TextCard valor="Comandos de Entrada e Saída"></TextCard>
 			<TextCard valor="Condicional"></TextCard>
 			<TextCard valor="Laços de Repetição"></TextCard>
 		</div>
-		<button
-			class="btn btn-primary"
-			on:click={() => {
-				const carrousel = document.getElementById('carrousel');
-				console.log('carrousel:' + carrousel);
-				carrousel ? (carrousel.scrollLeft += 150) : '';
-			}}
-		>
-			<h1>❯</h1>
-		</button>
+
 	</div>
 
-	<div class="w-full h-full flex flex-col items-center gap-4 overflow-auto">
+	<div class="w-full h-full flex flex-col items-center gap-4">
 		<ProgressBar progress={progressBarValue}></ProgressBar>
 		<TimeLine></TimeLine>
 	</div>
