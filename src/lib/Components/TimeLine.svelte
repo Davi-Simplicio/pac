@@ -32,7 +32,7 @@
 				seen={card.seen}
 				rightSide={card.rightSide}
 				contentIndex={card.contentIndex}
-				srcVideo=""
+				srcVideo={card.srcVideo}
 			></ContentCard>
 			<div class={card.rightSide?"":"w-4 h-60" + ( card.seen ?" bg-primary":" bg-secondary")}>
 	

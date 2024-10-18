@@ -15,13 +15,16 @@
 	import { onMount } from 'svelte';
 
 	let cardTimelineList = [];
-	let progressBarValue = 0
+	let progressBarValue = 0;
 
 	function updateCardTimelineList() {
 		const storedList = window.localStorage.getItem('CardTimeLineList');
 		if (storedList) {
 			cardTimelineList = JSON.parse(storedList);
-			progressBarValue = (cardTimelineList.filter((card: { seen: boolean; }) => card.seen).length / CardTimeLineList.length) * 100;
+			progressBarValue =
+				(cardTimelineList.filter((card: { seen: boolean }) => card.seen).length /
+					CardTimeLineList.length) *
+				100;
 		} else {
 			cardTimelineList = []; // Handle case if there's no data
 		}
@@ -77,13 +80,5 @@
 	<div class="w-full h-full flex flex-col items-center gap-4 overflow-auto">
 		<ProgressBar progress={progressBarValue}></ProgressBar>
 		<TimeLine></TimeLine>
-		<div class="w-full bg-black h-20"></div>
-		{#each CardWithImageList as cardWithImage}
-			<InformativeCard
-				title={cardWithImage.title}
-				description={cardWithImage.description}
-				imageSrc={cardWithImage.imageSrc}
-			></InformativeCard>
-		{/each}
 	</div>
 </div>

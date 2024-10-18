@@ -7,6 +7,7 @@
 	import Title from '$lib/Components/Title.svelte';
 	import Paragraph from '$lib/Components/Paragraph.svelte';
 	import Content from '$lib/Components/content.svelte';
+	import IframeContainer from '$lib/Components/IframeContainer.svelte';
 	let pageIndex: string | undefined = '';
 	let contentCardItem: ContentPage | undefined = undefined;
 	onMount(() => {
@@ -27,8 +28,5 @@
 		</div>
 	</div>
 {:else}
-    
-	<iframe src="https://www.geniol.com.br/logica/problemas/teste-de-einstein/" title="Einstein's Riddle Test" class="w-10/12 h-[800px]" >
 
-	</iframe>
 {/if}

@@ -2,7 +2,7 @@
     export let isSubTitle = false
     export let text
 </script>
-<div>
+<div class="flex justify-center">
     {#if isSubTitle}
         <h2 class="text-xl">
             {text}
