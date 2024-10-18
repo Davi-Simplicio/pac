@@ -7,7 +7,7 @@
 	</div>
 
 	<div class="general-square">
-		<div class="w-[600px] h-[80px] bg-neutral flex justify-center items-end absolute top-[440px] left-1/2 -translate-x-1/2 z-10">
+		<div class="w-[600px] h-[80px] bg-neutral flex justify-center items-end absolute top-48 left-1/2 -translate-x-1/2 z-10">
             <div class="rounded-full bg-neutral flex justify-center items-center w-[400px] h-[400px] border-4 border-white shadow-[0_0_80px_rgba(255,255,255,0.5)] shadow-white">
                 <img src="src/lib/images/macaco.png" alt="" srcset="">
             </div>
@@ -27,23 +27,6 @@
 	.screen {
 		@apply flex flex-col justify-center items-center w-full h-[95vh] bg-cover bg-no-repeat;
 		background-image: url(../images/bg-Monkey.png);
-	}
-
-	h1 {
-		@apply font-bold;
-		font-size: 3rem !important;
-		font-family:
-			system-ui,
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			Roboto,
-			Oxygen,
-			Ubuntu,
-			Cantarell,
-			'Open Sans',
-			'Helvetica Neue',
-			sans-serif;
 	}
 
 	.general-square {

@@ -13,6 +13,7 @@
 	import VideoComponent from '$lib/Components/videoComponent.svelte';
 	import TimeLine from '$lib/Components/TimeLine.svelte';
 	import { onMount } from 'svelte';
+	import MonkeyScreen from '$lib/Components/MonkeyScreen.svelte';
 
 	let cardTimelineList = [];
 	let progressBarValue = 0;
@@ -45,8 +46,9 @@
 </script>
 
 <div class="w-full h-max flex flex-col items-center bg-base-300">
-	<div class="flex w-full h-full justify-center items-center gap-2">
-		<div class="grid grid-cols-6 w-[65%] mt-4 ml-2 mb-10" >
+	<MonkeyScreen></MonkeyScreen>
+	<div class="flex w-full h-full justify-center items-center">
+		<div class="flex w-[90%] mt-4 mb-10 gap-2" >
 			<TextCard valor="Lógica de Programação"></TextCard>
 			<TextCard valor="Linguagem de Programação C"></TextCard>
 			<TextCard valor="Declaração de variáveis"></TextCard>
