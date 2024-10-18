@@ -25,7 +25,7 @@
 
 <style>
 	.screen {
-		@apply flex flex-col justify-center items-center w-full h-[95vh] bg-cover bg-no-repeat;
+		@apply flex flex-col justify-center items-center w-full h-[95vh] bg-center bg-cover bg-no-repeat;
 		background-image: url(../images/bg-Monkey.png);
 	}
 

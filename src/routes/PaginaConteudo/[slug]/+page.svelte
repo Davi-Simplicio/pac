@@ -22,7 +22,7 @@
 		<div class="w-full h-full pt-8 flex justify-center text-3xl">
 			<Title text={contentCardItem.title} isSubTitle={false}></Title>
 		</div>
-		<div class="flex justify-center w-1/2">
+		<div class="flex justify-center  w-[60%]">
 
 			<Content contents={contentCardItem.contents}></Content>
 		</div>
