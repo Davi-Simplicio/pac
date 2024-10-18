@@ -607,6 +607,10 @@ export const ContentPageList: ContentPage[] =
 					]
 				},
 				{
+					type: "text",
+					content:"Neste exemplo, se o valor da variável “num” for maior que zero, o bloco de código dentro do if será executado e a mensagem “O número é positivo” será exibida na tela. Caso contrário o programa acaba e para."
+				},
+				{
 					type: "title",
 					content: "Exemplo de Condicional com else"
 				},
@@ -702,6 +706,10 @@ export const ContentPageList: ContentPage[] =
 							textColor: "text-warning"
 						}
 					]
+				},
+				{
+					type: "text",
+					content:"Neste exemplo, se o valor da variável “num” for maior que zero, o bloco de código dentro do if será executado e a mensagem “O número é positivo” será exibida na tela. Caso contrário, o bloco de código dentro do else será executado e a mensagem “O número não é positivo” será exibida na tela."
 				},
 				{
 					type: "title",
