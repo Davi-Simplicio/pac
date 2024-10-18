@@ -115,8 +115,10 @@
 					}}
 				>
 					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">
-						{item.page.title}
-						<div class="text-[calc(var(--font-size)-4px)]" >{item.text}</div>
+						{item.text}
+						<div class="text-[calc(var(--font-size)-4px)]" >
+							{item.page.title}
+						</div>
 					</div>
 				</a>
 			{/each}
