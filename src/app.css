@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --font-size:1rem;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: var(--font-size) !important;
 }
-*{
-    font-size: var(--font-size) !important;
+
+:root {
+	--font-size: 1rem;
 }
