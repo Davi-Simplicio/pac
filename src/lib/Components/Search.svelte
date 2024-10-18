@@ -19,8 +19,14 @@
 	let selectionNavigate = 0;
 
 	function search() {
-		result = ContentPageList.filter((e) =>
-			e.textList.find((t) => t.title.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+		result = ContentPageList.filter((e:ContentPage) =>
+			e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+		);
+		ContentPageList.filter((e:ContentPage) =>{
+			console.log(
+				e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+			)
+		}
 		);
 		console.log(result);
 		elements.length = result.length;
@@ -64,7 +70,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div 
 	on:mouseleave={()=>result.length=0}
-	on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max w-6/12">
+	on:keydown={(e) => navigationSearch(e)} class="flex flex-col relative h-max ">
 	<label 
 		class="input 
 		focus:outline-none 
@@ -80,7 +86,7 @@
 			type="text"
 			bind:this={input}
 			bind:value={searchValue}
-			class="p-1 grow focus:outline-none focus-within:outline-none"
+			class="p-1 grow focus:outline-none min-w-64 focus-within:outline-none"
 			placeholder="Search..."
 			on:keyup={() => searchItem()}
 		/>
@@ -106,6 +112,7 @@
 					}}
 				>
 					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">{page.title}</div>
+					<div></div>
 				</a>
 			{/each}
 		</div>

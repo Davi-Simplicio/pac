@@ -19,6 +19,7 @@ export interface CardTimeLine {
     seen: boolean;
     rightSide: boolean;
     contentIndex:number;
+    srcVideo: string;
 }
 
 export interface ContentPage {
