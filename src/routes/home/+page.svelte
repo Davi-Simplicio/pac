@@ -49,15 +49,14 @@
 <div class="w-full h-max flex flex-col items-center bg-base-300">
 	<MonkeyScreen></MonkeyScreen>
 	<div class="flex w-full h-full justify-center items-center">
-		<div class="flex w-[90%] mt-4 mb-10 gap-2" >
-			<TextCard valor="Lógica de Programação"></TextCard>
-			<TextCard valor="Linguagem de Programação C"></TextCard>
-			<TextCard valor="Declaração de variáveis"></TextCard>
-			<TextCard valor="Comandos de Entrada e Saída"></TextCard>
-			<TextCard valor="Condicional"></TextCard>
-			<TextCard valor="Laços de Repetição"></TextCard>
+		<div class="flex justify-center w-[90%] mt-4 mb-10 gap-2" >
+			<TextCard index="0" valor="Lógica de Programação"></TextCard>
+			<TextCard index="1" valor="Linguagem de Programação C"></TextCard>
+			<TextCard index="2" valor="Declaração de variáveis"></TextCard>
+			<TextCard index="3" valor="Comandos de Entrada e Saída"></TextCard>
+			<TextCard index="4" valor="Condicional"></TextCard>
+			<TextCard index="5" valor="Laços de Repetição"></TextCard>
 		</div>
-
 	</div>
 
 	<div class="w-full h-full flex flex-col items-center gap-4">
