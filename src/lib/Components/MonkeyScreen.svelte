@@ -59,8 +59,7 @@
 	}
 
 	.mascot-text {
-		@apply text-white;
-		font-size: x-large !important;
+		@apply text-neutral-content;
 	}
 
 	.learn-now-btn {
