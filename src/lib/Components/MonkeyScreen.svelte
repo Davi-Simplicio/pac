@@ -1,5 +1,5 @@
 <script>
-	import imageCaco from "../images/macaco.png"
+	import imageCaco from "..\images\macaco.png"
 </script>
 
 <div class="screen">
