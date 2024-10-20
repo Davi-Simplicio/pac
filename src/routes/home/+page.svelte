@@ -1,20 +1,17 @@
 <script lang="ts">
 	import TextCard from '../../lib/Components/TextCard.svelte';
-	import ProgressBar from '$lib/Components/ProgressBar.svelte';
-	import ContentCard from '$lib/Components/ContentCard.svelte';
-	import InformativeCard from '$lib/Components/InformativeCard.svelte';
-	import CodeMockup from '$lib/Components/codeMockup.svelte';
+	import ProgressBar from '../../lib/Components/ProgressBar.svelte';
+
 	import {
 		Codes,
 		CardTimeLineList,
 		CardWithImageList,
 		ContentPageList
 	} from '../../lib/types/content';
-	import VideoComponent from '$lib/Components/videoComponent.svelte';
-	import TimeLine from '$lib/Components/TimeLine.svelte';
+	import TimeLine from '../../lib/Components/TimeLine.svelte';
 	import { onMount } from 'svelte';
-	import MonkeyScreen from '$lib/Components/MonkeyScreen.svelte';
-	import CatolicaLogo from '$lib/Icons/catolicaLogo.svelte';
+	import MonkeyScreen from '../../lib/Components/MonkeyScreen.svelte';
+	import CatolicaLogo from '../../lib/Icons/catolicaLogo.svelte';
 
 	let cardTimelineList = [];
 	let progressBarValue = 0;

@@ -1,5 +1,4 @@
-<script>
-</script>
+
 
 <div class="screen">
 	<div>
@@ -9,7 +8,7 @@
 	<div class="general-square">
 		<div class="w-[600px] h-[80px] bg-neutral flex justify-center items-end absolute top-96 left-1/2 -translate-x-1/2 z-10">
             <div class="rounded-full bg-neutral flex justify-center items-center w-[400px] h-[400px] border-4 border-white shadow-[0_0_80px_rgba(255,255,255,0.5)] shadow-secondary-content">
-                <img src="src/lib/images/macaco.png" alt="" srcset="">
+                <img src="src\lib\images\macaco.png" alt="" srcset="">
             </div>
         </div>
 		<div class="rectangle absolute bottom-32">

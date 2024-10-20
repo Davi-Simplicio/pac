@@ -55,7 +55,7 @@
 <div class="w-full h-12 fixed z-50">
     <div class="h-full py-1 w-full bg-neutral relative flex justify-around ">
         <div class="h-full  min-w-32 flex justify-center gap-4 items-center">
-            <a class="h-full min-w-14  cursor-pointer" href="/HomePage">
+            <a class="h-full min-w-14  cursor-pointer" href="/home">
                 <Monkey></Monkey>
             </a>
                 <Search></Search>

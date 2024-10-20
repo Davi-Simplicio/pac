@@ -132,7 +132,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type: 'image',
-					content: '../src/lib/images/image.png'
+					content: '..\\src\\lib\\images\\image.png'
 				},
 				{
 					type: 'text',
@@ -156,7 +156,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type: 'image',
-					content: '../src/lib/images/DiagramasChapinFluxogramas4.jpg'
+					content: '..\\src\\lib\\images\\DiagramasChapinFluxogramas4.jpg'
 				},
 				{
 					type: 'title',
