@@ -1,4 +1,6 @@
 import type { CardWithImage, Code, CardTimeLine, ContentPage, CodeList } from './data';
+import img1 from '../images/image.png';
+import img2 from '../images/DiagramasChapinFluxogramas4.jpg';
 
 // Card Time Line
 
@@ -132,7 +134,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type: 'image',
-					content: '..\src\lib\images\image.png'
+					content: img1
 				},
 				{
 					type: 'text',
@@ -156,7 +158,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type: 'image',
-					content: '..\src\lib\images\DiagramasChapinFluxogramas4.jpg'
+					content: img2
 				},
 				{
 					type: 'title',
