@@ -1,6 +1,6 @@
 import type { CardWithImage, Code, CardTimeLine, ContentPage, CodeList } from './data';
-import img1 from '../images/image.png';
-import img2 from '../images/DiagramasChapinFluxogramas4.jpg';
+import img1 from '..\\images\\image.png';
+import img2 from '..\\images\\DiagramasChapinFluxogramas4.jpg';
 
 // Card Time Line
 
