@@ -2,7 +2,6 @@
 	import TextCard from '../../lib/Components/TextCard.svelte';
 	import ProgressBar from '$lib/Components/ProgressBar.svelte';
 	import ContentCard from '$lib/Components/ContentCard.svelte';
-	import InformativeCard from '$lib/Components/InformativeCard.svelte';
 	import CodeMockup from '$lib/Components/codeMockup.svelte';
 	import {
 		Codes,

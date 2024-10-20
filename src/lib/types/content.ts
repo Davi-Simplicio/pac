@@ -131,8 +131,8 @@ export const ContentPageList: ContentPage[] =
 					content: 'A Fluxograma é a representação gráfica ou pictórica de um algoritmo com a ajuda de diferentes símbolos, formas e setas para demonstrar um processo ou programa. Com algoritmos, podemos entender facilmente um programa. O objetivo principal de usar um fluxograma é analisar diferentes métodos. Vários símbolos padrão são aplicados em um fluxograma:'
 				},
 				{
-					type: 'image',
-					content: '../src/lib/images/image.png'
+					type:'image',
+					content:'..\src\lib\images\image.png'
 				},
 				{
 					type: 'text',
@@ -156,7 +156,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type: 'image',
-					content: '../src/lib/images/DiagramasChapinFluxogramas4.jpg'
+					content: '..\src\lib\images\DiagramasChapinFluxogramas4.jpg'
 				},
 				{
 					type: 'title',

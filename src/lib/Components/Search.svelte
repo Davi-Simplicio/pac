@@ -15,17 +15,25 @@
 
 	let input: HTMLAnchorElement;
 	let result: ContentPage[] = [];
+	let result2: {idPage:ContentPage,text:string}[] = [];
 	let elements: HTMLAnchorElement[] = [];
 	let selectionNavigate = 0;
 
 	function search() {
+		result2=[];
 		result = ContentPageList.filter((e:ContentPage) =>
 			e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
 		);
 		ContentPageList.filter((e:ContentPage) =>{
-			console.log(
-				e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
-			)
+			
+				e.contents.filter((e)=>e.type=="title").filter((t) =>{
+					t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())?
+					result2.push({idPage:e,text:t.content}) : null
+					return t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
+				} 
+				)
+					
+			
 		}
 		);
 		console.log(result);
@@ -96,7 +104,7 @@
 			role="listbox"
 			class="w-full absolute top-6 z-0 h-max p-1 pt-3 bg-slate-50 rounded-b-md shadow-md"
 		>
-			{#each result as page, i}
+			{#each result2 as page, i}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<!-- svelte-ignore a11y-missing-attribute -->
 				<a
@@ -105,14 +113,16 @@
 					role="option"
 					aria-selected="true"
 					tabindex="0"
-					href="/PaginaConteudo/{ContentPageList.indexOf(page)}"
+					href="/PaginaConteudo/{ContentPageList.indexOf(page.idPage)}"
 					on:click={() => {
-						goto('/PaginaConteudo/' + ContentPageList.indexOf(page));
+						goto('/PaginaConteudo/' + ContentPageList.indexOf(page.idPage));
 						setTimeout(() => window.location.reload(), 100);
 					}}
 				>
-					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">{page.title}</div>
-					<div></div>
+					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">
+						{page.idPage.title}
+						<div>{page.text}</div>
+					</div>
 				</a>
 			{/each}
 		</div>
