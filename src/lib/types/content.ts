@@ -102,7 +102,7 @@ export const ContentPageList: ContentPage[] =
 				},
 				{
 					type:'image',
-					content:'../src/lib/images/image.png'
+					content:'..\src\lib\images\image.png'
 				},
 				{
 					type:'text',
@@ -125,7 +125,7 @@ export const ContentPageList: ContentPage[] =
 					content:'Vamos mostrar agora como ficaria um fluxograma para ilustrar um dia de domingo de uma certa pessoa, que conterá passos que serão realizados durante o dia e uma condição que dependendo do caso dará uma resposta diferente.'
 				},{
 					type:'image',
-          content:'../src/lib/images/DiagramasChapinFluxogramas4.jpg'
+          content:'..\src\lib\images\DiagramasChapinFluxogramas4.jpg'
 				}
 			]
 		}
