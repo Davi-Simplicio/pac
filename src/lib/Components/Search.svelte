@@ -14,21 +14,18 @@
 	let searchValue = '';
 
 	let input: HTMLAnchorElement;
-	let result: {page:ContentPage,text:string}[] = [];
+	let result: ContentPage[] = [];
 	let elements: HTMLAnchorElement[] = [];
 	let selectionNavigate = 0;
 
 	function search() {
-		result=[];
+		result = ContentPageList.filter((e:ContentPage) =>
+			e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+		);
 		ContentPageList.filter((e:ContentPage) =>{
-			
-			e.contents.filter((e)=>e.type=="title").find((t) => 
-			{
-				t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())?
-				result.push({page:e, text:t.content}) : false;
-			return t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
-			}
-		)
+			console.log(
+				e.contents.filter((e)=>e.type=="title").find((t) => t.content.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()))
+			)
 		}
 		);
 		console.log(result);
@@ -99,7 +96,7 @@
 			role="listbox"
 			class="w-full absolute top-6 z-0 h-max p-1 pt-3 bg-slate-50 rounded-b-md shadow-md"
 		>
-			{#each result as item, i}
+			{#each result as page, i}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<!-- svelte-ignore a11y-missing-attribute -->
 				<a
@@ -108,18 +105,14 @@
 					role="option"
 					aria-selected="true"
 					tabindex="0"
-					href="/PaginaConteudo/{ContentPageList.indexOf(item.page)}"
+					href="/PaginaConteudo/{ContentPageList.indexOf(page)}"
 					on:click={() => {
-						goto('/PaginaConteudo/' + ContentPageList.indexOf(item.page));
+						goto('/PaginaConteudo/' + ContentPageList.indexOf(page));
 						setTimeout(() => window.location.reload(), 100);
 					}}
 				>
-					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">
-						{item.text}
-						<div class="text-[calc(var(--font-size)-4px)]" >
-							{item.page.title}
-						</div>
-					</div>
+					<div class="p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">{page.title}</div>
+					<div></div>
 				</a>
 			{/each}
 		</div>
